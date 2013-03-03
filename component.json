@@ -1,0 +1,10 @@
+{
+  "name": "Flight.js-overview",
+  "version": "0.1",
+  "dependencies": {
+    'flight': 'latest',
+    'bootstrap': 'latest',
+    'requirejs': 'latest',
+    'mustache': 'latest'
+  }
+}

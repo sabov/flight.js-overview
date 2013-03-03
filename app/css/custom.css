@@ -1,0 +1,20 @@
+body {
+  background-color: #F0F0F0;
+}
+.slides {
+  width: 100%;
+  overflow-x: scroll;
+}
+.slides-holder {
+  width: 10000px;
+  overflow: hidden;
+}
+.slide {
+  float: left;
+  height: 400px;
+  width: 600px;
+  padding: 30px;
+  margin: 80px;
+  background-color: #FFFFFF;
+  box-shadow: 1px 1px 30px rgba(0,0,0,0.3);
+}
