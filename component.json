@@ -2,9 +2,9 @@
   "name": "Flight.js-overview",
   "version": "0.1",
   "dependencies": {
-    'flight': 'latest',
-    'bootstrap': 'latest',
-    'requirejs': 'latest',
-    'mustache': 'latest'
+    "flight": "~1.0.2",
+    "requirejs": "~2.1.4",
+    "bootstrap": "~2.3.1",
+    "mustache": "~0.7.2"
   }
 }
