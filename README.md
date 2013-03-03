@@ -7,12 +7,10 @@ Workshop about new twitter framework - Flight.js
 
 Clone repository
 
-    {
-      git clone git://github.com/sabov/flight.js-overview.git
-    }
+    git clone git://github.com/sabov/flight.js-overview.git
 
-To install a packages, run:
+To install a packages run:
 
-    {
-      bower install
-    }
+    bower install
+
+If you have problems with this command, please, install [Twitter Bower](http://twitter.github.com/bower/).
