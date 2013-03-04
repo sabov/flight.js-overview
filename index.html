@@ -5,6 +5,7 @@
     <title>Flight Mail</title>
     <link rel="stylesheet" href="components/bootstrap.css/css/bootstrap.css">
     <link rel="stylesheet" href="components/bootstrap.css/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="components/prettify/prettify.css">
     <link rel="stylesheet" href="app/css/custom.css">
   </head>
 
@@ -18,11 +19,44 @@
     <div class="slides">
       <div class="slides-holder">
 
+        <div id="slide-10" class="slide">
+          <h2>Thanks!</h2>
+          <a>http://sabov.github.com/<strong>flight.js-overview</strong></a>
+          <a>@alexsabov</a>
+        </div>
+
+        <div id="slide-9" class="slide">
+          <h2>No framework is perfect,
+          <br/>
+          but we're getting there</h2>
+        </div>
+
+        <div id="slide-8" class="slide">
+          <h1>Components collection</h1>
+          <img src="img/puzzle.jpg" alt="" />
+        </div>
+
+        <div id="slide-7" class="slide">
+          <h1>Problems</h1>
+          <ul>
+            <li>limitation</li>
+            <li>events debug</li>
+            <li>no nesting</li>
+          </ul>
+        </div>
+
         <div id="slide-6" class="slide">
           <h1>Сreating component</h1>
-          <div class="code">
-            
-          </div>
+          <pre class="prettyprint linenums">
+function attachTo(selector/*, options args */) {
+    if (!selector) {
+        throw new Error();
+    }
+
+    $(selector).each(function(i, node) {
+        new this(node, options);
+    }.bind(this));
+}</pre>
         </div>
 
         <div id="slide-5" class="slide">
@@ -79,9 +113,11 @@
     <script src="components/jquery/jquery.js"></script>
     <script src="components/es5-shim/es5-shim.js"></script>
     <script src="components/es5-shim/es5-sham.js"></script>
+    <script type="text/javascript" src="components/prettify/prettify.js"></script>
     <script data-main="requireMain.js" src="components/requirejs/require.js"></script>
 
     <script>
+      prettyPrint()
       require(
         [
           'components/flight/lib/compose',

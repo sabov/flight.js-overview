@@ -32,7 +32,7 @@ html {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e0e0e0', GradientType=1);
 }
 .slide h1 {
-  font-size: 80px;
+  font-size: 70px;
   text-align: center;
   margin: 20px 0 80px;
 }
@@ -148,4 +148,42 @@ html {
 }
 #slide-5 h2 {
   margin: 270px 0 0 90px;
+}
+/*------   slide 6   ------*/
+#slide-6 pre {
+  font-size: 25px;
+  padding-left: 15px;
+  background-color: #FFFFFF;
+}
+/*------   slide 7   ------*/
+#slide-7 ul {
+  padding: 50px;
+  font-size: 50px;
+}
+#slide-7 ul li {
+  margin: 0 0 100px 0;
+}
+/*------   slide 8   ------*/
+#slide-8 img {
+  margin-top: -30px;
+}
+/*------   slide 9   ------*/
+#slide-9 h2 {
+  font-size: 40px;
+  line-height: 50px;
+  margin-top: 240px;
+  text-align: center;
+}
+/*------   slide 10   ------*/
+#slide-10 h2 {
+  font-size: 40px;
+  line-height: 50px;
+  margin-top: 260px;
+  margin-bottom: 200px;
+  text-align: center;
+}
+#slide-10 a {
+  display: block;
+  font-size: 30px;
+  line-height: 40px;
 }
