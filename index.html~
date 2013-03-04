@@ -18,27 +18,6 @@
     <div class="slides">
       <div class="slides-holder">
 
-        <div id="slide-6" class="slide">
-          <h1>Сreating component</h1>
-          <div class="code">
-            
-          </div>
-        </div>
-
-        <div id="slide-5" class="slide">
-          <img src="img/cards.jpg" alt="" class="cards" />
-          <h2>Why events?</h2>
-        </div>
-
-        <div id="slide-4" class="slide">
-          <h1>Features</h1>
-          <ul>
-            <li>mixins</li>
-            <li>cleanup</li>
-            <li>100% decouping</li>
-          </ul>
-        </div>
-
         <div id="slide-3" class="slide">
           <div class="row">
             <img src="img/require.png" alt="" class="require" />
@@ -49,14 +28,8 @@
             </div>
           </div>
           <h1>Component</h1>
-          <div class="arrow advice-arrow">
-            <span></span>
-          </div>
-          <div class="arrow regstry-arrow">
-            <span></span>
-          </div>
           <p class="advice">Advice</p>
-          <p class="regstry">Regstry</p>
+          <p class="Regstry">Regstry</p>
         </div>
 
         <div id="slide-2" class="slide">

@@ -14,14 +14,14 @@ define(
 
     function slides() {
 
+      var currSlide  = 0;
+      var slideWidth = 800;
+
       this.defaultAttrs({
         //selectors
         slideSelector: '.slide',
         slidesHolderSelector: '.slides-holder',
       });
-
-      var currSlide  = 0;
-      var slideWidth = 800;
 
       this.renderSlides = function(slides) {
         return Mustache.render(templates.slideItem, { slides: slides });
@@ -56,7 +56,10 @@ define(
       this.getCurrSlideIndex = function() {
         var actualScroll = this.$node.scrollLeft();
         return ~~(actualScroll/slideWidth);
-      }
+      };
+
+      this.onResize = function() {
+      };
 
       this.after("initialize", function() {
         var data = this.getSlides();
