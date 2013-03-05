@@ -7,20 +7,19 @@ html {
 .slides {
   height: 100%;
   width: 100%;
-  overflow-x: scroll;
 }
 .slides-holder {
   height: 100%;
-  width: 10000px;
+  width: 100%;
   overflow: hidden;
 }
 .slide {
-  float: left;
+  position: absolute;
   height: 600px;
   width: 800px;
   padding: 30px;
-  margin: 50px 200px;
-  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
+  /*box-shadow: 1px 1px 3px rgba(0,0,0,0.2);*/
+
   border: 20px solid #ffffff;
   color: #666666;
   background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #e0e0e0 100%);
@@ -30,6 +29,17 @@ html {
   background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%, #e0e0e0 100%);
   background: radial-gradient(ellipse at center, #ffffff 0%, #e0e0e0 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e0e0e0', GradientType=1);
+  opacity: 0;
+  transition: all 2000ms ease-in-out 2000ms;
+  -moz-transition: transform .8s;
+  /* Firefox 4 */
+
+  -webkit-transition: transform .8s;
+  /* Safari and Chrome */
+
+  -o-transition: transform .3s;
+  /* Opera */
+
 }
 .slide h1 {
   font-size: 70px;
