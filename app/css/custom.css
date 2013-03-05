@@ -187,3 +187,25 @@ html {
   font-size: 30px;
   line-height: 40px;
 }
+/*------   slide 11   ------*/
+#slide-11 p {
+  font-size: 100px;
+  line-height: 120px;
+  color: #333333;
+  text-align: center;
+}
+#slide-11 p span {
+  color: #CC0000;
+}
+#slide-11 .split {
+  width: 400px;
+  margin: 60px auto 40px;
+  height: 4px;
+  background-color: #777777;
+}
+/*------   slide 12   ------*/
+#slide-12 pre {
+  font-size: 18px;
+  padding-left: 15px;
+  background-color: #FFFFFF;
+}

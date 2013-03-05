@@ -5,7 +5,7 @@
     <title>Flight Mail</title>
     <link rel="stylesheet" href="components/bootstrap.css/css/bootstrap.css">
     <link rel="stylesheet" href="components/bootstrap.css/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="components/prettify/prettify.css">
+    <link rel="stylesheet" href="components/google-code-prettify-lite/prettify.css">
     <link rel="stylesheet" href="app/css/custom.css">
   </head>
 
@@ -18,6 +18,37 @@
 
     <div class="slides">
       <div class="slides-holder">
+
+
+        <div id="slide-12" class="slide">
+          <h1>Events</h1>
+          <h2>Handling</h2>
+          <pre class="prettyprint linenums">
+this.after("initialize", function() {
+  this.on("uiItemsRequested", this.serveMailItems);
+  this.on("dataItemsRefreshRequested", this.serveMailItems);
+});</pre>
+          <h2>Triggering</h2>
+          <pre class="prettyprint linenums">
+this.forwardMail = function(ev, data) {
+  this.trigger('uiForwardMail');
+};</pre>
+        </div>
+
+        <div id="slide-11" class="slide">
+          <h1>Аrchitecture</h1>
+          <p>
+            <span>[</span>
+              UI
+            <span>]</span>
+          </p>
+          <div class="split"></div>
+          <p>
+            <span>[</span>
+              Data
+            <span>]</span>
+          </p>
+        </div>
 
         <div id="slide-10" class="slide">
           <h2>Thanks!</h2>
@@ -113,7 +144,7 @@ function attachTo(selector/*, options args */) {
     <script src="components/jquery/jquery.js"></script>
     <script src="components/es5-shim/es5-shim.js"></script>
     <script src="components/es5-shim/es5-sham.js"></script>
-    <script type="text/javascript" src="components/prettify/prettify.js"></script>
+    <script type="text/javascript" src="components/google-code-prettify-lite/prettify.js"></script>
     <script data-main="requireMain.js" src="components/requirejs/require.js"></script>
 
     <script>
