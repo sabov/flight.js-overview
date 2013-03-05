@@ -18,6 +18,7 @@ html {
   height: 600px;
   width: 800px;
   padding: 30px;
+  margin: 50px;
   /*box-shadow: 1px 1px 3px rgba(0,0,0,0.2);*/
 
   border: 20px solid #ffffff;
@@ -48,6 +49,7 @@ html {
 }
 .slides-controls {
   position: absolute;
+  z-index: 1000;
 }
 .arrow {
   width: 100px;
@@ -144,77 +146,77 @@ html {
   margin-right: 170px;
   float: right;
 }
-/*------   slide 4   ------*/
-#slide-4 ul {
+/*------   slide 6   ------*/
+#slide-6 ul {
   padding: 50px;
   font-size: 50px;
 }
-#slide-4 ul li {
+#slide-6 ul li {
   margin: 0 0 100px 0;
 }
-/*------   slide 5   ------*/
-#slide-5 .cards {
+/*------   slide 7   ------*/
+#slide-7 .cards {
   float: right;
 }
-#slide-5 h2 {
+#slide-7 h2 {
   margin: 270px 0 0 90px;
 }
-/*------   slide 6   ------*/
-#slide-6 pre {
+/*------   slide 8   ------*/
+#slide-8 pre {
   font-size: 25px;
   padding-left: 15px;
   background-color: #FFFFFF;
 }
-/*------   slide 7   ------*/
-#slide-7 ul {
+/*------   slide 9   ------*/
+#slide-9 ul {
   padding: 50px;
   font-size: 50px;
 }
-#slide-7 ul li {
+#slide-9 ul li {
   margin: 0 0 100px 0;
 }
-/*------   slide 8   ------*/
-#slide-8 img {
+/*------   slide 10   ------*/
+#slide-10 img {
   margin-top: -30px;
 }
-/*------   slide 9   ------*/
-#slide-9 h2 {
+/*------   slide 11   ------*/
+#slide-11 h2 {
   font-size: 40px;
   line-height: 50px;
   margin-top: 240px;
   text-align: center;
 }
-/*------   slide 10   ------*/
-#slide-10 h2 {
+/*------   slide 12   ------*/
+#slide-12 h2 {
   font-size: 40px;
   line-height: 50px;
   margin-top: 260px;
   margin-bottom: 200px;
   text-align: center;
 }
-#slide-10 a {
+#slide-12 a {
   display: block;
   font-size: 30px;
   line-height: 40px;
 }
-/*------   slide 11   ------*/
-#slide-11 p {
+/*------   slide 4   ------*/
+#slide-4 p {
   font-size: 100px;
   line-height: 120px;
   color: #333333;
   text-align: center;
 }
-#slide-11 p span {
+#slide-4 p span {
   color: #CC0000;
 }
-#slide-11 .split {
+#slide-4 .split {
   width: 400px;
   margin: 60px auto 40px;
   height: 4px;
   background-color: #777777;
 }
-/*------   slide 12   ------*/
-#slide-12 pre {
+/*------   slide 5   ------*/
+#slide-5 pre {
   font-size: 18px;
   padding-left: 15px;
   background-color: #FFFFFF;

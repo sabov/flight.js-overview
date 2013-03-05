@@ -39,7 +39,6 @@ define(
           'transform': 'scale(0.5)',
           'margin': '-30% 0 0 -50%'
         });
-        console.log(holder);
       };
 
       this.showSlide = function(index) {
@@ -66,11 +65,11 @@ define(
           'transform': 'translate(2000px,100px)'
         });
       };
-      
+
       this.show = function(el, isFirst) {
           var r  = isFirst? 0 : Math.floor((Math.random()*10)+1)-5;
           $(el).css({
-            'transform': 'translate(200px,100px) rotate('+ r + 'deg)',
+            'transform': 'translate(0px,100px) rotate('+ r + 'deg)',
           });
       };
 
@@ -84,12 +83,24 @@ define(
       };
 
       this.onResize = function() {
-      };
-
-      this.move = function() {
         var slides = this.select('slideSelector');
-        slides.last().css({
-          'transform': 'translate(2000px,100px)'
+        var slideHeight  = slides.first().outerHeight(true);
+        var slideWidth   = slides.first().outerWidth(true);
+        var winHeight    = $(window).height();
+        var winWidth     = $(window).width();
+        var scale        = winHeight/slideHeight;
+        var left         = Math.round(winWidth/2 - slideWidth/2);
+        var top          = (slideHeight-slideHeight*scale)/2 + (winHeight - slideHeight)/2;
+        top = (slideHeight-winHeight)/2 + (slideHeight-slideHeight*scale)/2;
+        var r  = Math.floor((Math.random()*10)+1)-5;
+        console.log([left, top, scale]);
+        this.$node.css({
+          'transform' : 'scale(' + scale + ') translate(0px, -' + top + 'px)'
+        });
+        slides.each(function(key, el) {
+          $(el).css({
+            'transform': 'translate(' + left + 'px, 0px) rotate(' + r + ')'
+          });
         });
       };
 
@@ -100,7 +111,7 @@ define(
           var r  = Math.floor((Math.random()*10)+1)-5;
           r = key == 0? '0' : r;
           $(el).css({
-            'transform': 'translate(200px,100px) rotate('+ r + 'deg)',
+            'transform': 'translate(0px,100px) rotate('+ r + 'deg)',
             'opacity': '1',
             'z-index': (length-key)
           });
@@ -113,7 +124,9 @@ define(
         this.on(document, "uiNextSlideRequested", this.shift.bind(this, 1));
         this.on(document, "uiPreviousSlideRequested", this.shift.bind(this, -1));
         this.on(document, "uiListViewRequested", this.toListView);
+        $(window).resize(this.onResize.bind(this));
         this.init();
+        this.onResize();
       });
     }
 
